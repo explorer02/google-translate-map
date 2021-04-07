@@ -1,0 +1,14 @@
+.custom-button {
+	margin-top: 1rem;
+	max-height: 4rem;
+	padding: 0.5rem;
+	max-width: 8rem;
+	border-radius: 10px;
+	background-color: black;
+	font-size: larger;
+	color: white;
+	outline: none;
+}
+.custom-button:focus {
+	outline: none;
+}
