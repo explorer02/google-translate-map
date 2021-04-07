@@ -3,30 +3,44 @@ import SpeechToText from './components/SpeectToText/SpeechToText';
 import './App.css';
 import Button from './components/Button/Button';
 import TextToSpeech from './components/TextToSpeect/TextToSpeech';
-const App = () => {
-	const [showRecorder, setShowRecorder] = useState(false);
-	const [showSpeaker, setShowSpeaker] = useState(false);
+import Locater from './components/Locater/Locater';
 
-	const openRecorderHandler = () => {
-		setShowRecorder(true);
+const OPTION_NONE = 0;
+const OPTION_RECORDER = 1;
+const OPTION_SPEAKER = 2;
+const OPTION_LOCATER = 3;
+
+const App = () => {
+	const [showModal, setShowModal] = useState(OPTION_NONE);
+
+	const openModalHandler = (option) => {
+		setShowModal(option);
 	};
-	const closeRecorderHandler = () => {
-		setShowRecorder(false);
+	const closeModalHandler = () => {
+		setShowModal(OPTION_NONE);
 	};
-	const openSpeakerHandler = () => {
-		setShowSpeaker(true);
-	};
-	const closeSpeakerHandler = () => {
-		setShowSpeaker(false);
-	};
+
+	let modalBox = null;
+	if (showModal === OPTION_RECORDER) {
+		modalBox = <SpeechToText onCloseDialog={closeModalHandler} />;
+	} else if (showModal === OPTION_SPEAKER) {
+		modalBox = <TextToSpeech onCloseDialog={closeModalHandler} />;
+	} else if (showModal === OPTION_LOCATER) {
+		modalBox = <Locater onCloseDialog={closeModalHandler} />;
+	}
 
 	return (
 		<div className="App">
-			{showRecorder && <SpeechToText onCloseDialog={closeRecorderHandler} />}
-			<Button onClick={openRecorderHandler} text="Speech to Text" />
-
-			{showSpeaker && <TextToSpeech onCloseDialog={closeSpeakerHandler} />}
-			<Button onClick={openSpeakerHandler} text="Text to Speech" />
+			<Button
+				onClick={() => openModalHandler(OPTION_RECORDER)}
+				text="Speech to Text"
+			/>
+			<Button
+				onClick={() => openModalHandler(OPTION_SPEAKER)}
+				text="Text to Speech"
+			/>
+			<Button onClick={() => openModalHandler(OPTION_LOCATER)} text="Locater" />
+			{modalBox}
 		</div>
 	);
 };
