@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/google-translate-map/static/css/main.d0049864.chunk.css",
-    "main.js": "/google-translate-map/static/js/main.5caa726d.chunk.js",
-    "main.js.map": "/google-translate-map/static/js/main.5caa726d.chunk.js.map",
-    "runtime-main.js": "/google-translate-map/static/js/runtime-main.c47ff005.js",
-    "runtime-main.js.map": "/google-translate-map/static/js/runtime-main.c47ff005.js.map",
-    "static/js/2.1c665560.chunk.js": "/google-translate-map/static/js/2.1c665560.chunk.js",
-    "static/js/2.1c665560.chunk.js.map": "/google-translate-map/static/js/2.1c665560.chunk.js.map",
-    "static/js/3.fb08dbfb.chunk.js": "/google-translate-map/static/js/3.fb08dbfb.chunk.js",
-    "static/js/3.fb08dbfb.chunk.js.map": "/google-translate-map/static/js/3.fb08dbfb.chunk.js.map",
+    "main.css": "/google-translate-map/static/css/main.ffe4b076.chunk.css",
+    "main.js": "/google-translate-map/static/js/main.8e0b4696.chunk.js",
+    "main.js.map": "/google-translate-map/static/js/main.8e0b4696.chunk.js.map",
+    "runtime-main.js": "/google-translate-map/static/js/runtime-main.0fdef0a6.js",
+    "runtime-main.js.map": "/google-translate-map/static/js/runtime-main.0fdef0a6.js.map",
+    "static/js/2.df0a1c06.chunk.js": "/google-translate-map/static/js/2.df0a1c06.chunk.js",
+    "static/js/2.df0a1c06.chunk.js.map": "/google-translate-map/static/js/2.df0a1c06.chunk.js.map",
+    "static/js/3.266bd58a.chunk.js": "/google-translate-map/static/js/3.266bd58a.chunk.js",
+    "static/js/3.266bd58a.chunk.js.map": "/google-translate-map/static/js/3.266bd58a.chunk.js.map",
     "index.html": "/google-translate-map/index.html",
-    "static/css/main.d0049864.chunk.css.map": "/google-translate-map/static/css/main.d0049864.chunk.css.map",
-    "static/js/2.1c665560.chunk.js.LICENSE.txt": "/google-translate-map/static/js/2.1c665560.chunk.js.LICENSE.txt"
+    "static/css/main.ffe4b076.chunk.css.map": "/google-translate-map/static/css/main.ffe4b076.chunk.css.map",
+    "static/js/2.df0a1c06.chunk.js.LICENSE.txt": "/google-translate-map/static/js/2.df0a1c06.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c47ff005.js",
-    "static/js/2.1c665560.chunk.js",
-    "static/css/main.d0049864.chunk.css",
-    "static/js/main.5caa726d.chunk.js"
+    "static/js/runtime-main.0fdef0a6.js",
+    "static/js/2.df0a1c06.chunk.js",
+    "static/css/main.ffe4b076.chunk.css",
+    "static/js/main.8e0b4696.chunk.js"
   ]
 }
