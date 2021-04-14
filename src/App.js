@@ -4,11 +4,13 @@ import './App.css';
 import Button from './components/Button/Button';
 import TextToSpeech from './components/TextToSpeect/TextToSpeech';
 import Locater from './components/Locater/Locater';
+import Translator from './components/Translator/Translator';
 
 const OPTION_NONE = 0;
 const OPTION_RECORDER = 1;
 const OPTION_SPEAKER = 2;
 const OPTION_LOCATER = 3;
+const OPTION_TRANSLATOR = 4;
 
 const App = () => {
 	const [showModal, setShowModal] = useState(OPTION_NONE);
@@ -21,12 +23,21 @@ const App = () => {
 	};
 
 	let modalBox = null;
-	if (showModal === OPTION_RECORDER) {
-		modalBox = <SpeechToText onCloseDialog={closeModalHandler} />;
-	} else if (showModal === OPTION_SPEAKER) {
-		modalBox = <TextToSpeech onCloseDialog={closeModalHandler} />;
-	} else if (showModal === OPTION_LOCATER) {
-		modalBox = <Locater onCloseDialog={closeModalHandler} />;
+	switch (showModal) {
+		case OPTION_RECORDER:
+			modalBox = <SpeechToText onCloseDialog={closeModalHandler} />;
+			break;
+		case OPTION_SPEAKER:
+			modalBox = <TextToSpeech onCloseDialog={closeModalHandler} />;
+			break;
+		case OPTION_LOCATER:
+			modalBox = <Locater onCloseDialog={closeModalHandler} />;
+			break;
+		case OPTION_TRANSLATOR:
+			modalBox = <Translator onCloseDialog={closeModalHandler} />;
+			break;
+		default:
+			modalBox = null;
 	}
 
 	return (
@@ -40,6 +51,10 @@ const App = () => {
 				text="Text to Speech"
 			/>
 			<Button onClick={() => openModalHandler(OPTION_LOCATER)} text="Locater" />
+			<Button
+				onClick={() => openModalHandler(OPTION_TRANSLATOR)}
+				text="Translator"
+			/>
 			{modalBox}
 		</div>
 	);

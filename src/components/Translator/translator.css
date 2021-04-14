@@ -1,0 +1,40 @@
+.translator {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	flex-direction: column;
+}
+.braille-alphabets,
+.braille-numbers {
+	display: flex;
+	flex: 0 1 30%;
+	flex-wrap: wrap;
+}
+.braille-extras {
+	display: flex;
+	flex: 0 0 10%;
+}
+.translator-output {
+	margin-top: 1rem;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid black;
+	font-size: larger;
+	padding: 0.5rem;
+}
+.braille-button {
+	width: 2rem;
+	height: 2rem;
+	font-size: x-large;
+	background-color: yellow;
+	margin: 0.2rem;
+	outline: none;
+}
+.braille-button:focus {
+	outline: 1px solid black;
+}
+.translator-controls {
+	display: flex;
+	justify-content: space-around;
+}
