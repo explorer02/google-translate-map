@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/google-translate-map/static/css/main.fb94ae87.chunk.css",
+    "main.css": "/google-translate-map/static/css/main.72d91edf.chunk.css",
     "main.js": "/google-translate-map/static/js/main.b4433fd4.chunk.js",
     "main.js.map": "/google-translate-map/static/js/main.b4433fd4.chunk.js.map",
     "runtime-main.js": "/google-translate-map/static/js/runtime-main.0fdef0a6.js",
@@ -10,13 +10,13 @@
     "static/js/3.266bd58a.chunk.js": "/google-translate-map/static/js/3.266bd58a.chunk.js",
     "static/js/3.266bd58a.chunk.js.map": "/google-translate-map/static/js/3.266bd58a.chunk.js.map",
     "index.html": "/google-translate-map/index.html",
-    "static/css/main.fb94ae87.chunk.css.map": "/google-translate-map/static/css/main.fb94ae87.chunk.css.map",
+    "static/css/main.72d91edf.chunk.css.map": "/google-translate-map/static/css/main.72d91edf.chunk.css.map",
     "static/js/2.004c9a3b.chunk.js.LICENSE.txt": "/google-translate-map/static/js/2.004c9a3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0fdef0a6.js",
     "static/js/2.004c9a3b.chunk.js",
-    "static/css/main.fb94ae87.chunk.css",
+    "static/css/main.72d91edf.chunk.css",
     "static/js/main.b4433fd4.chunk.js"
   ]
 }
