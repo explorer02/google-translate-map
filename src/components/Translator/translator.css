@@ -35,7 +35,8 @@
 	outline: none;
 }
 .braille-button:focus {
-	outline: 1px solid black;
+	outline: none;
+	border: 3px solid black;
 }
 .translator-controls {
 	display: flex;
