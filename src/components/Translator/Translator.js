@@ -15,7 +15,7 @@ const Translator = ({ onCloseDialog }) => {
 
 	return (
 		<Backdrop>
-			<Modal>
+			<Modal longer>
 				<div className="translator">
 					<div className="braille-alphabets">
 						{alphabets.map((a, index) => (
@@ -28,7 +28,6 @@ const Translator = ({ onCloseDialog }) => {
 							/>
 						))}
 					</div>
-					<br />
 					<div className="braille-numbers">
 						{nums.map((n, index) => (
 							<BrailleButton
@@ -40,6 +39,7 @@ const Translator = ({ onCloseDialog }) => {
 							/>
 						))}
 					</div>
+
 					<div className="braille-extras">
 						<BrailleButton
 							char={''}

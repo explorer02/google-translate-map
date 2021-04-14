@@ -4,16 +4,19 @@
 	height: 100%;
 	padding: 1rem;
 	flex-direction: column;
+	justify-content: space-around;
 }
 .braille-alphabets,
 .braille-numbers {
 	display: flex;
-	flex: 0 1 30%;
+	flex: 0 1 20%;
 	flex-wrap: wrap;
+	padding: 0.5rem;
 }
 .braille-extras {
 	display: flex;
 	flex: 0 0 10%;
+	padding: 0.5rem;
 }
 .translator-output {
 	margin-top: 1rem;
