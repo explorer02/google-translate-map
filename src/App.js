@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SpeechToText from './components/SpeectToText/SpeechToText';
 import './App.css';
 import Button from './components/Button/Button';
-import TextToSpeech from './components/TextToSpeect/TextToSpeech';
+import TextToSpeech from './components/TextToSpeech/TextToSpeech';
 import Locater from './components/Locater/Locater';
 import Translator from './components/Translator/Translator';
 

@@ -6,22 +6,22 @@ import './text-to-speech.css';
 
 const TextToSpeech = ({ onCloseDialog }) => {
 	const [input, setInput] = useState('');
-	const [isPaused, setIsPaused] = useState(false);
+	// const [isPaused, setIsPaused] = useState(false);
 
 	const startSpeaking = () => {
 		const utter = new window.SpeechSynthesisUtterance(input);
 		window.speechSynthesis.cancel();
 		window.speechSynthesis.speak(utter);
-		setIsPaused(false);
+		// setIsPaused(false);
 	};
-	const pauseSpeaking = () => {
-		window.speechSynthesis.pause();
-		setIsPaused(true);
-	};
-	const resumeSpeaking = () => {
-		window.speechSynthesis.resume();
-		setIsPaused(false);
-	};
+	// const pauseSpeaking = () => {
+	// 	window.speechSynthesis.pause();
+	// 	setIsPaused(true);
+	// };
+	// const resumeSpeaking = () => {
+	// 	window.speechSynthesis.resume();
+	// 	setIsPaused(false);
+	// };
 
 	const closeDialogHandler = () => {
 		onCloseDialog();
@@ -40,11 +40,11 @@ const TextToSpeech = ({ onCloseDialog }) => {
 					</div>
 					<div className="tts-controls">
 						<Button text="Speak" onClick={startSpeaking} />
-						{isPaused ? (
+						{/* {isPaused ? (
 							<Button text={'Resume'} onClick={resumeSpeaking} />
 						) : (
 							<Button text={'Pause'} onClick={pauseSpeaking} />
-						)}
+						)} */}
 						<Button text="Cancel" onClick={closeDialogHandler} />
 					</div>
 				</div>
